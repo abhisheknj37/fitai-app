@@ -1,5 +1,8 @@
 # FitAI - Personal AI Health & Fitness Platform
 
+**Live Demo:** [https://fitai-platform.onrender.com](https://fitai-platform.onrender.com)  
+**Hosting:** Render (Node.js web service, Singapore region)
+
 A complete, full-stack AI health and fitness web application replicating the exact 12-screen design system: Landing Page, Dashboard, AI Assistant, Profile, Workouts, Nutrition, Tracking, Health Reports, Emergency SOS, Community, Settings, and Mobile Preview.
 
 ---
