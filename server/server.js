@@ -24,8 +24,6 @@ const PORT = process.env.PORT || 5000;
 
 // Security Middlewares
 app.use(configureSecurityHeaders());
-app.use(configureCors());
-
 // Request Parsing
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
@@ -34,6 +32,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(requestLogger);
 
 // Rate Limiting
+app.use('/api', configureCors());
 app.use('/api', generalLimiter);
 
 // API Endpoints
