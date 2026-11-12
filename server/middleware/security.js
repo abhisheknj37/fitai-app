@@ -14,6 +14,8 @@ export const configureCors = () => {
     'http://127.0.0.1:5173',
     'http://localhost:3000',
     'http://localhost:5000',
+    'https://fitai-platform.onrender.com',
+    process.env.RENDER_EXTERNAL_URL,
     process.env.CLIENT_URL
   ].filter(Boolean);
 
